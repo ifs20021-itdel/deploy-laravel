@@ -1,0 +1,18 @@
+body{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 33px;
+    text-indent: 1.90189px;
+}
+
+#grad{
+    background: linear-gradient(180deg, rgba(27, 19, 129, 0.98) 0%, rgba(32, 25, 139, 0.9) 0.01%, rgba(190, 19, 33, 0.87) 100%),
+    url("https://i.ibb.co/929sVV3/login-bg.png");
+}
+
+#login{
+    background: #00767D;
+    border-radius: 7.57223px;
+}
