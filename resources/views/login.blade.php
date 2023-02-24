@@ -84,26 +84,6 @@
         </div>
       </div>
     </div>
-
-    <!-- <div class="login">
-      <img
-        class="download-4-removebg-preview-icon"
-        alt=""
-        src="public/download--4-removebgpreview-3@2x.png"
-      />
-      <img class="login-item" alt="" src="public/line-5.svg" />
-      <div class="logo-2"></div>
-      <img
-        class="login-bg"
-        alt=""
-        src="{{asset('Assets/login-bg.png')}}"
-      />
-      <div class="login-inner"></div>
-      <b class="hello">Hello.</b><b class="welcome-back">Welcome Back!</b>
-      <div class="login-child1"></div>
-      <img class="logo-beasiswa-4" alt="" src="public/logo-beasiswa-4@2x.png" />
-    </div> -->
-
   </body>
 
 </html>
