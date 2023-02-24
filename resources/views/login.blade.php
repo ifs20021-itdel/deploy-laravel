@@ -18,7 +18,15 @@
       <div class="flex-1 h-full max-w-4xl mx-auto bg-white rounded-lg shadow-xl">
         <div class="flex flex-col md:flex-row">
           <div class="h-32 md:h-auto md:w-1/2">
-            <img class="object-cover w-full h-full" src="https://i.ibb.co/929sVV3/login-bg.png" alt="img" id="grad"/>
+
+          <section class="showcase">
+          <img class="object-cover w-full h-full" src="{{asset('Assets/login-bg.png')}}" alt="img"/>
+            <div class="overlay">
+              <h2>Hello.<br>Welcome<br>Back!</h2>
+            </div>
+          </section>
+
+            <!-- <img class="object-cover w-full h-full" src="{{asset('Assets/login-bg.png')}}" alt="img"/> -->
           </div>
           <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
             <div class="w-full">
@@ -76,6 +84,26 @@
         </div>
       </div>
     </div>
+
+    <!-- <div class="login">
+      <img
+        class="download-4-removebg-preview-icon"
+        alt=""
+        src="public/download--4-removebgpreview-3@2x.png"
+      />
+      <img class="login-item" alt="" src="public/line-5.svg" />
+      <div class="logo-2"></div>
+      <img
+        class="login-bg"
+        alt=""
+        src="{{asset('Assets/login-bg.png')}}"
+      />
+      <div class="login-inner"></div>
+      <b class="hello">Hello.</b><b class="welcome-back">Welcome Back!</b>
+      <div class="login-child1"></div>
+      <img class="logo-beasiswa-4" alt="" src="public/logo-beasiswa-4@2x.png" />
+    </div> -->
+
   </body>
 
 </html>
