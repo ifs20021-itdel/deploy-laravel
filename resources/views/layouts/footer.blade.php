@@ -132,6 +132,6 @@
             </div>
         </div>
 </div>
-<div class="bg-black w-full py-2 bg-[#172B4D]">
+<div class="bg-[#172B4D] w-full py-2">
     <p class="text-white text-center  font-bold">Copyright @Informatics 20</p>
 </div>
