@@ -7,6 +7,9 @@ module.exports = {
     './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
   ],
   theme: {
+    // colors: {
+    //   'primary': '#0D285F',
+    // },
     extend: {
       backgroundImage:{
         'beasiswa-theme': "bg-red-500",
