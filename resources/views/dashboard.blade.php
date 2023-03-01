@@ -24,6 +24,7 @@
           </div>
         </div>
 
+
 <!-- Section 2 -->
 <!-- <section class="bg-white md:px-0">
   <div class="container items-center max-w-6xl mx-auto xl:px-5">
