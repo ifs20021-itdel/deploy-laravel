@@ -13,6 +13,11 @@ module.exports = {
     extend: {
       backgroundImage:{
         'beasiswa-theme': "bg-red-500",
+      },
+      fontFamily: {
+        'montserrat': ['Montserrat'],
+        'lato': ['Lato'],
+        'garamond': ['Garamond'],
       }
     }
   },

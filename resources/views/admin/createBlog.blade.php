@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title','Tulis Blog')
-@section('background', 'bg-slate-700')
+@section('background', 'bg-white')
 @section('content')
 <!DOCTYPE html>
 <html>

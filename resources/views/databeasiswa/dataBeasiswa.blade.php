@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title', 'Data Beasiswa')
-@section('background', 'bg-slate-700')
+@section('background', 'bg-white')
 @section('content')
     <html>
         <head>

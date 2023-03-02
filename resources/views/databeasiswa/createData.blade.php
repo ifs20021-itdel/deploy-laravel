@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title', 'Tambah Data')
-@section('background', 'bg-slate-700')
+@section('background', 'bg-white')
 @section('content')
 <div class="container border shadow-2xl rounded-3xl border-black w-3/4 my-16 mx-auto bg-zinc-100">
     <h1 class="text-white rounded-t-3xl shadow-md pt-5 pb-5 px-28 font-bold text-3xl bg-green-800">Tambah Data Mahasiswa </h1>

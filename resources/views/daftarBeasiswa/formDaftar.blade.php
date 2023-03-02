@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title', 'Daftar Beasiswa')
-@section('background', 'bg-slate-700')
+@section('background', 'bg-white')
 @section('content')
     <form action="{{route('store-daftar-beasiswa')}}" method="POST">
         @csrf

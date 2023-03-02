@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title','Beasiswa Eksternal')
-@section('background', 'bg-slate-700')
+@section('background', 'bg-white')
 @section('content')
     <h1 class="text-center font-bold text-5xl pt-10 pb-16">Beasiswa Eksternal</h1>
         @php

@@ -1,3 +1,3 @@
 @extends('layouts.app')
 @section('title','About')
-@section('background', 'bg-slate-700')
+@section('background', 'bg-white')
