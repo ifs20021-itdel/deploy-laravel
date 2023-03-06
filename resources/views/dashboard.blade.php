@@ -234,8 +234,14 @@ Credit: Componentity.com -->
 
 <h1 class="text-5xl md:text-6xl md:ml-20 xl:text-7xl text-[#0D285F] font-bold tracking-tight">BERITA</span></h1>
 
+<!-- TAMPIL BERITA -->
+<!-- <div class="flex items-center justify-center my-10">
+  <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadowm m-2">
+    @include('blog.postArtikel')
+  </div>
+</div> -->
+
 <div class="flex items-center justify-center my-10">
-<!-- @include('blog.postArtikel') -->
   <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadowm m-2">
       <a href="#">
           <img class="rounded-t-lg" src="{{asset('assets/DashboardBg.jpg')}}" alt="" />
