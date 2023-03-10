@@ -61,5 +61,4 @@
             </ul>
     </div>
 </div>
-<div class="p-3 white"></div>
 @endsection

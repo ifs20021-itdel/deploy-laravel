@@ -43,7 +43,7 @@
             <div
               class="absolute top-[calc(50%_+_109.95px)] left-[calc(50%_-_57.29px)] rounded flex flex-row pt-[8.5px] pb-[9px] pr-[21.181251525878906px] pl-[21.381248474121094px] items-start justify-start text-[17px] border-[1px] border-solid border-whitesmoke-200"
             >
-              <b class="text-base text-[#31506E]">Read me</b>
+              <a href="/beasiswaInternal"><b class="text-base text-[#31506E]">Read me</a>
             </div>
           </div>
           <div class="relative w-[379.33px] h-[410.89px] shrink-0 text-orange">
