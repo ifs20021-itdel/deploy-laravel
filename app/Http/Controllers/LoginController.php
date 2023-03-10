@@ -34,7 +34,7 @@ class LoginController extends Controller
 
             $request->session()->put('username', 'admin');
             $request->session()->regenerate();
-            return redirect()->route('dashboard');
+            return redirect()->route('home');
         }else{
         
             $user = Http::asForm()->post('https://cis.del.ac.id/api/jwt-api/do-auth?',[
@@ -89,7 +89,7 @@ class LoginController extends Controller
                 
                 $request->session()->put('username', $users->username);
                 $request->session()->regenerate();
-                return redirect()->route('dashboard');
+                return redirect()->route('home');
             }else{
                 return redirect()->route('login')->withErrors(['login' => 'Username atau Password Salah']);
             }

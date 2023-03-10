@@ -60,7 +60,7 @@ class BlogController extends Controller
         }
  
         Alert::success('Sukses', 'Dokumen Anda Sudah Diposting.');
-        return redirect()->route('dashboard');
+        return redirect()->route('home');
     }
     
     public function show($id_article){
