@@ -5,7 +5,6 @@
 @section('content')
 
 @csrf
-
 <div id="hero" class="lg:flex items-center">
   <div class="px-5 sm:px-10 md:px-10 md:flex lg:block lg:w-1/2 lg:max-w-3xl lg:mr-8 lg:px-20">
     <div class="md:w-1/2 md:mr-10 lg:w-full lg:mr-0">            
@@ -148,8 +147,6 @@ Credit: Componentity.com -->
   <img src="http://codenawis.com/componentity/wp-content/uploads/2020/08/logo-componentity-%E2%80%93-9.png" class="w-48 mx-auto my-5">
 </a> -->
 
-
-
 <!-- <div style="height:1600px">
     <img src="{{asset('assets/DashboardBg.jpg')}}" alt="theme" class=" object-cover absolute z-0" style=" top:0; width:100%; height:80vh" >
     <div class="absolute z-10 top-40 pl-12">
@@ -241,7 +238,7 @@ Credit: Componentity.com -->
   </div>
 </div>
 
-<div class="flex items-center justify-center my-10">
+{{-- <div class="flex items-center justify-center my-10">
   <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadowm m-2">
       <a href="#">
           <img class="rounded-t-lg" src="{{asset('assets/DashboardBg.jpg')}}" alt="" />
@@ -289,5 +286,5 @@ Credit: Componentity.com -->
           </a>
       </div>
   </div>
-</div>
+</div> --}}
 @endsection
