@@ -45,6 +45,7 @@
               <a href="/beasiswaInternal"><b class="text-base text-[#31506E]">Read me</a>
             </div>
           </div>
+          
           <div class="relative w-[379.33px] h-[410.89px] shrink-0 text-orange">
             <img
               class="absolute top-[51px] left-[148.67px] rounded-base w-[82px] h-[82px] object-cover"
@@ -63,7 +64,7 @@
             <div
               class="absolute top-[calc(50%_+_109.95px)] left-[calc(50%_-_55.95px)] rounded flex flex-row pt-[8.5px] pb-[9px] pr-[17.845314025878906px] pl-[18.045310974121094px] items-start justify-start text-xl border-[1px] border-solid border-whitesmoke-200"
             >
-              <b class="text-base text-[#F49D1A]">Read me</b>
+            <a href="/beasiswaEksternal"><b class="text-base text-[#F49D1A]">Read me</b></a>
             </div>
           </div>
         </div>
@@ -238,7 +239,7 @@ Credit: Componentity.com -->
   </div>
 </div>
 
-{{-- <div class="flex items-center justify-center my-10">
+<div class="flex items-center justify-center my-10">
   <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadowm m-2">
       <a href="#">
           <img class="rounded-t-lg" src="{{asset('assets/DashboardBg.jpg')}}" alt="" />
@@ -286,5 +287,5 @@ Credit: Componentity.com -->
           </a>
       </div>
   </div>
-</div> --}}
+</div>
 @endsection

@@ -60,7 +60,7 @@ Route::group(
 );
 
 
-// Dashboard
+// Home
 Route::get('/',
     [HomeController::class,'index']
 )->name('home');
@@ -88,3 +88,7 @@ Route::get('{id}/',[BlogController::class,'show'])->name('article');
 // Log out
 Route::post('logout', LogoutController::class)->name('logout');
 
+// Dashboard
+Route::get('/dashboard',function(){
+    return view('admin.dashboard');
+});
