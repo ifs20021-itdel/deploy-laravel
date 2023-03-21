@@ -38,6 +38,7 @@ Route::middleware('auth')->group(function(){
 Route::group(
     ['middleware'=>['auth','role']],
     function(){
+
         Route::get('/create-data-beasiswa/{tahun}',[
             DataBeasiswaController::class,'create'])->name('create-data-beasiswa');
         Route::post('/create-data-beasiswa/{tahun}',
@@ -59,12 +60,15 @@ Route::group(
     }
 );
 
+// Dashboard
+Route::get('/dashboard',function(){
+    return view('admin.dashboard');
+});
 
 // Home
 Route::get('/',
     [HomeController::class,'index']
 )->name('home');
-
 
 
 // Jenis Beasiswa
@@ -88,7 +92,3 @@ Route::get('{id}/',[BlogController::class,'show'])->name('article');
 // Log out
 Route::post('logout', LogoutController::class)->name('logout');
 
-// Dashboard
-Route::get('/dashboard',function(){
-    return view('admin.dashboard');
-});
