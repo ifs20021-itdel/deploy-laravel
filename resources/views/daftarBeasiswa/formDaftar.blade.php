@@ -9,7 +9,7 @@
             <h1 class="font-bold font-sans text-4xl text-white">PENDAFTARAN</h1>
         </div>
     </div>
-    <div class="w-3/4 border rounded-lg mx-auto my-24 shadow-xl">
+    <div class="w-3/4 border rounded-lg mx-auto my-24 shadow-xl -mt-10 bg-white ">
         <div class="my-10 w-3/4 mx-auto">
             <div class="mb-10">
                 <label class="text-xl p-1 tracking-wide" for="email">Email<span style="color:red">*</span></label>
