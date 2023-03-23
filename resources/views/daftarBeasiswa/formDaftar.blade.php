@@ -9,7 +9,7 @@
             <h1 class="font-bold font-sans text-4xl text-white">PENDAFTARAN</h1>
         </div>
     </div>
-    <div class="w-3/4 border rounded-lg mx-auto my-24 shadow-xl bg-white" style="margin-top: -80px;">
+    <div class="w-3/4 border rounded-lg mx-auto my-24 shadow-2xl bg-white" style="margin-top: -80px;">
         <div class="my-10 w-3/4 mx-auto">
             <div class="mb-10">
                 <label class="text-xl p-1 tracking-wide" for="email">Email<span style="color:red">*</span></label>
@@ -41,14 +41,12 @@
                             </div>
                             <div class="mb-10">
                                 <label class="text-xl p-1 tracking-wide" for="emailPribadi">Alamat Email Pribadi<span style="color:red">*</span></label>
-                                <input class="block w-full px-4 py-3 text-black border border-gray-300 bg-gray-100 rounded leading-tight focus:outline-none focus:bg-white hover:shadow-md" id="emailPribadi" name="emailPribadi" type="email">
-                                <p class=" text-sm text-gray-500  ">ex: example@gmail.com</p>
+                                <input class="block w-full px-4 py-3 text-black border border-gray-300 bg-gray-100 rounded leading-tight focus:outline-none focus:bg-white hover:shadow-md" id="emailPribadi" name="emailPribadi" type="email" placeholder="masukkan email pribadi anda">
                                 @error('emailPribadi')
                                 <div class="text-red-600  pl-2">{{ $message }}</ @enderror </div>
                                     <div class="mb-10">
                                         <label class="text-xl p-1 tracking-wide" for="hp">No. Handphone<span style="color:red">*</span></label>
-                                        <input class="block w-full px-4 py-3 text-black border border-gray-300 bg-gray-100 rounded leading-tight focus:outline-none focus:bg-white hover:shadow-md" id="hp" name="hp" type="text">
-                                        <p class=" text-sm text-gray-500  ">ex: +62852XXXXXXXX</p>
+                                        <input class="block w-full px-4 py-3 text-black border border-gray-300 bg-gray-100 rounded leading-tight focus:outline-none focus:bg-white hover:shadow-md" id="hp" name="hp" type="text" placeholder="masukkan no. handphone anda">
                                         @error('hp')
                                         <div class="text-red-600  pl-2">{{ $message }}</ @enderror </div>
                                             <div class="mb-10">
@@ -58,13 +56,13 @@
                                                 <div class="text-red-600  pl-2">{{ $message }}</ @enderror </div>
                                                     <div class="mb-10">
                                                         <label class="text-xl p-1 tracking-wide" for="ipk">IPK<span style="color:red">*</span></label>
-                                                        <input class="block w-full px-4 py-3 text-black border border-gray-300 bg-gray-100 rounded leading-tight focus:outline-none " id="ipk" name="ipk" type="text" value="{{$userIP}}" readonly>
+                                                        <input class="block w-full px-4 py-3 text-black border border-gray-300 bg-gray-100 rounded leading-tight focus:outline-none " id="ipk" name="ipk" type="text" value="{{$userIP}}" readonly placeholder="masukkan IPK anda">
                                                         {{-- <p class=" px-1 py-1 text-sm">format: 3.04</p> --}}
                                                         @error('ipk')
                                                         <div class="text-red-600  pl-2">{{ $message }}</ @enderror </div>
                                                             <div class="mb-10">
                                                                 <label class="text-xl p-1 tracking-wide" for="live">Alamat Tempat Tinggal<span style="color:red">*</span></label>
-                                                                <input class="block w-full px-4 py-3 text-black border border-gray-300 bg-gray-100 rounded leading-tight focus:outline-none focus:bg-white hover:shadow-md" id="live" name="live" type="text">
+                                                                <input class="block w-full px-4 py-3 text-black border border-gray-300 bg-gray-100 rounded leading-tight focus:outline-none focus:bg-white hover:shadow-md" id="live" name="live" type="text" placeholder="masukkan alamat tempat tinggal anda">
                                                                 @error('live')
                                                                 <div class="text-red-600  pl-2">{{ $message }}</ @enderror </div>
                                                                     <div class="mb-10">
