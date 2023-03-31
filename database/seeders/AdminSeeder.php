@@ -20,7 +20,7 @@ class AdminSeeder extends Seeder
             'username'=> 'admin',
             'email' => 'admin@gmail',
             // 'password' => "admin123",
-            'role' => 'admin',
+            'role' => 'Admin',
             'remember_token' => 'admin123ajsdhas123123f'
         ]);
     }

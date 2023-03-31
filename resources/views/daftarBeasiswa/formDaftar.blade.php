@@ -61,39 +61,44 @@
                                                         @error('ipk')
                                                         <div class="text-red-600  pl-2">{{ $message }}</ @enderror </div>
                                                             <div class="mb-10">
-                                                                <label class="text-xl p-1 tracking-wide" for="live">Alamat Tempat Tinggal<span style="color:red">*</span></label>
-                                                                <input class="block w-full px-4 py-3 text-black border border-gray-300 bg-gray-100 rounded leading-tight focus:outline-none focus:bg-white hover:shadow-md" id="live" name="live" type="text" placeholder="masukkan alamat tempat tinggal anda">
-                                                                @error('live')
+                                                                <label class="text-xl p-1 tracking-wide" for="nilaiPerilaku">Nilai Perilaku<span style="color:red">*</span></label>
+                                                                <input class="block w-full px-4 py-3 text-black border border-gray-300 bg-gray-100 rounded leading-tight focus:outline-none focus:bg-white hover:shadow-md" id="nilaiPerilaku" name="nilaiPerilaku" type="text" placeholder="masukkan nilai perilaku anda">
+                                                                @error('nilaiPerilaku')
                                                                 <div class="text-red-600  pl-2">{{ $message }}</ @enderror </div>
                                                                     <div class="mb-10">
-                                                                        <label class="text-xl p-1 tracking-wide" for="ktm">Softcopy KTM (pdf)<span style="color:red">*</span></label>
-                                                                        <input class="block w-full px-4 py-3 text-black border border-gray-300 bg-gray-100 rounded leading-tight focus:outline-none focus:bg-white hover:shadow-md" id="ktm" name="ktm" type="file">
-                                                                    </div>
-                                                                    <div class="mb-10">
-                                                                        <label class="text-xl p-1 tracking-wide" for="ktp">Softcopy KTP (pdf)<span style="color:red">*</span></label>
-                                                                        <input class="block w-full px-4 py-3 text-black border border-gray-300 bg-gray-100 rounded leading-tight focus:outline-none focus:bg-white hover:shadow-md" id="ktp" name="ktp" type="file">
+                                                                        <label class="text-xl p-1 tracking-wide" for="live">Alamat Tempat Tinggal<span style="color:red">*</span></label>
+                                                                        <input class="block w-full px-4 py-3 text-black border border-gray-300 bg-gray-100 rounded leading-tight focus:outline-none focus:bg-white hover:shadow-md" id="live" name="live" type="text" placeholder="masukkan alamat tempat tinggal anda">
+                                                                        @error('live')
+                                                                        <div class="text-red-600  pl-2">{{ $message }}</ @enderror </div>
+                                                                            <div class="mb-10">
+                                                                                <label class="text-xl p-1 tracking-wide" for="ktm">Softcopy KTM (pdf)<span style="color:red">*</span></label>
+                                                                                <input class="block w-full px-4 py-3 text-black border border-gray-300 bg-gray-100 rounded leading-tight focus:outline-none focus:bg-white hover:shadow-md" id="ktm" name="ktm" type="file">
+                                                                            </div>
+                                                                            <div class="mb-10">
+                                                                                <label class="text-xl p-1 tracking-wide" for="ktp">Softcopy KTP (pdf)<span style="color:red">*</span></label>
+                                                                                <input class="block w-full px-4 py-3 text-black border border-gray-300 bg-gray-100 rounded leading-tight focus:outline-none focus:bg-white hover:shadow-md" id="ktp" name="ktp" type="file">
 
-                                                                    </div>
-                                                                    <div class="mb-10">
-                                                                        <label class="text-xl p-1 tracking-wide" for="kks">Transkrip Nilai (pdf)<span style="color:red">*</span></label>
-                                                                        <input class="block w-full px-4 py-3 text-black border border-gray-300 bg-gray-100 rounded leading-tight focus:outline-none focus:bg-white hover:shadow-md" id="kks" name="kks" type="file">
-                                                                    </div>
-                                                                    <div class="mb-10">
-                                                                        <label class="text-lg p-1 tracking-wide" for="sptmb">Softcopy Surat Pernyataan Tidak Menerima Beasiswa Lain Bermaterai 10000 (pdf)<span style="color:red">*</span></label>
-                                                                        <input class="block w-full px-4 py-3 text-black border border-gray-300 bg-gray-200 rounded leading-tight focus:outline-none focus:bg-white hover:shadow-md" id="sptmb" name="sptmb" type="file">
+                                                                            </div>
+                                                                            <div class="mb-10">
+                                                                                <label class="text-xl p-1 tracking-wide" for="kks">Transkrip Nilai (pdf)<span style="color:red">*</span></label>
+                                                                                <input class="block w-full px-4 py-3 text-black border border-gray-300 bg-gray-100 rounded leading-tight focus:outline-none focus:bg-white hover:shadow-md" id="kks" name="kks" type="file">
+                                                                            </div>
+                                                                            <div class="mb-10">
+                                                                                <label class="text-lg p-1 tracking-wide" for="sptmb">Softcopy Surat Pernyataan Tidak Menerima Beasiswa Lain Bermaterai 10000 (pdf)<span style="color:red">*</span></label>
+                                                                                <input class="block w-full px-4 py-3 text-black border border-gray-300 bg-gray-200 rounded leading-tight focus:outline-none focus:bg-white hover:shadow-md" id="sptmb" name="sptmb" type="file">
 
-                                                                    </div>
-                                                                    <div class="flex items-center">
-                                                                        <input checked id="checked-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                                                        <label for="checked-checkbox" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Saya menyatakan dan menjamin kebenaran data yang telah saya input<span style="color:red">*</span></label>
-                                                                    </div>
-                                                                    <p><span style="color:red">*</span>)wajib diisi</p>
-                                                                    <div class="mt-10">
-                                                                        <button class="bg-blue-500 mx-1 px-5 py-2 text-white font-semibold rounded" type="submit">Submit</button>
-                                                                    </div>
+                                                                            </div>
+                                                                            <div class="flex items-center">
+                                                                                <input checked id="checked-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                                                                <label for="checked-checkbox" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Saya menyatakan dan menjamin kebenaran data yang telah saya input<span style="color:red">*</span></label>
+                                                                            </div>
+                                                                            <p><span style="color:red">*</span>)wajib diisi</p>
+                                                                            <div class="mt-10">
+                                                                                <button class="bg-blue-500 mx-1 px-5 py-2 text-white font-semibold rounded" type="submit">Submit</button>
+                                                                            </div>
 
-                                                                </div>
-                                                            </div>
+                                                                        </div>
+                                                                    </div>
 </form>
 
 @endsection
