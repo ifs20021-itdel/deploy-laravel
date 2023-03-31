@@ -92,3 +92,8 @@ Route::get('{id}/',[BlogController::class,'show'])->name('article');
 // Log out
 Route::post('logout', LogoutController::class)->name('logout');
 
+
+//Laman admin
+Route::get('/home',function(){
+    return view('admin.home');
+});
