@@ -65,6 +65,10 @@ Route::get('/dashboard',function(){
     return view('admin.dashboard');
 });
 
+Route::get('/about',function(){
+    return view('about');
+});
+
 // Home
 Route::get('/',
     [HomeController::class,'index']
@@ -97,3 +101,10 @@ Route::post('logout', LogoutController::class)->name('logout');
 Route::get('/home',function(){
     return view('admin.home');
 });
+
+
+
+
+// Route::view('/about', 'about');
+// Route::view('/developer', 'developer');
+// Route::view('/hero', 'hero');
