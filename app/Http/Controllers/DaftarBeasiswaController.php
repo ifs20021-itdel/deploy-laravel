@@ -18,7 +18,7 @@ class DaftarBeasiswaController extends Controller
 
     public function getIP($nim)
     {
-        $token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImp0aSI6IlVOSVFVRS1KV1QtSURFTlRJRklFUiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLmV4YW1wbGUuY29tIiwiYXVkIjoiaHR0cHM6XC9cL2Zyb250ZW5kLmV4YW1wbGUuY29tIiwianRpIjoiVU5JUVVFLUpXVC1JREVOVElGSUVSIiwiaWF0IjoxNjgxMzQ4ODgwLCJleHAiOjE2ODEzNTE4ODAsInVpZCI6NDg3Mn0.clFFfDwKd6bri3V9cCsdBN5DXzriL9B6e4PslohrL-U";
+        $token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImp0aSI6IlVOSVFVRS1KV1QtSURFTlRJRklFUiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLmV4YW1wbGUuY29tIiwiYXVkIjoiaHR0cHM6XC9cL2Zyb250ZW5kLmV4YW1wbGUuY29tIiwianRpIjoiVU5JUVVFLUpXVC1JREVOVElGSUVSIiwiaWF0IjoxNjgxNDM4MjYyLCJleHAiOjE2ODE0NDEyNjIsInVpZCI6NDg3Mn0.7t7GGl67bjGFiLVvIrwtVtSfq2MfNb-eeN7DKcXpWg4";
         $userIP = Http::withToken($token)->asForm()->post('https://cis.del.ac.id/api/library-api/get-penilaian?nim=' . $nim)->body();
         $jsonIP = json_decode($userIP, true);
         $userIP = $jsonIP['IP'];
