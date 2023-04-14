@@ -52,7 +52,7 @@
       <a href="/seleksi" class="block py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-400 md:p-0 tracking-wider ">Seleksi</a>
     </li>
     <li>
-      <button id="dropdownTulis" data-dropdown-toggle="dropdownT" class="z-20 py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-400 md:p-0 inline-flex items-center tracking-wider" type="button">Tulis <svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <button id="dropdownTulis" data-dropdown-toggle="dropdownT" class="z-20 py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-400 md:p-0 inline-flex items-center tracking-wider" type="button">Beasiswa <svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
         </svg></button>
       <div id="dropdownT" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow">
@@ -81,7 +81,7 @@
           </div>
           <ul class="py-1" aria-labelledby="user-menu-button">
             <li>
-              <a href="/dashboard" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 ">Dashboard</a>
+              <a href="/" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 ">Dashboard</a>
             </li>
             <li>
               <form action="{{route('logout')}}" method="POST">

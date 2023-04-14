@@ -5,6 +5,24 @@
 <form action="{{route('store-daftar-beasiswa')}}" method="POST">
     @csrf
     <div class="text-center" style="background-color: #0D285F; padding:115px;">
+        <!--Breadcrumb-->
+        <nav class="w-full rounded-md">
+            <ol class="list-reset flex">
+                <li>
+                    <a href="#" class="text-white">Home</a>
+                </li>
+                <li>
+                    <span class="mx-2 text-neutral-500 dark:text-neutral-400">/</span>
+                </li>
+                <li>
+                    <a href="#" class="text-white">Beasiswa</a>
+                </li>
+                <li>
+                    <span class="mx-2 text-neutral-500 dark:text-neutral-400">/</span>
+                </li>
+                <li style="color: #F49D1A;">Pendaftaran</li>
+            </ol>
+        </nav>
         <div>
             <h1 class="font-bold font-sans text-4xl text-white">PENDAFTARAN</h1>
         </div>

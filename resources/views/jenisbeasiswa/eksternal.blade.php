@@ -30,11 +30,11 @@
         </div>
         <!--Second item-->
         <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none" data-te-carousel-item>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/IT_Del_Drone2.jpg" class="block w-full" alt="Camera" />
+            <img src="" class="block w-full" alt="Camera" />
         </div>
         <!--Third item-->
         <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none" data-te-carousel-item>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/IT_Del_Drone2.jpg" class="block w-full" alt="Exotic Fruits" />
+            <img src="" class="block w-full" alt="Exotic Fruits" />
         </div>
     </div>
 
@@ -116,7 +116,7 @@ $id++;
                 <div class="flex flex-col md:w-1/2 md:pl-12">
                     <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
                         <a href="{{$value->registration_link}}">
-                            <img alt="team" class="flex-shrink-0 rounded-lg w-full h-59 object-cover object-center mb-4" src="https://dummyimage.com/200x200">
+                            <img alt="team" class="flex-shrink-0 rounded-lg w-full h-59 object-cover object-center mb-4" src="https://avpn.asia/wp-content/uploads/2019/12/Tanoto-logo-green.png">
                         </a>
                     </div>
                     <form action="{{route('daftar-beasiswa')}}" method="GET" class="w-2/4 px-5 pt-4 pb-5">
@@ -135,13 +135,13 @@ $id++;
 </div>
 
 
-<div class="container">
-    <div class="flex flex-col overflow-x-auto">
+<div>
+    <div class="table-auto">
         <div class="sm:-mx-6 lg:-mx-8">
             <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
-                <div class="overflow-x-auto">
-                    <table class="min-w-full text-left text-sm font-light">
-                        <thead class="border-b font-medium dark:border-neutral-500">
+                <div class="overflow-x-auto rounded-lg">
+                    <table class="min-w-full text-left text-sm font-medium">
+                        <thead class="border-b font-medium dark:border-neutral-500" style="background-color: #F49D1A;">
                             <tr>
                                 <th scope="col" class="px-6 py-4">No</th>
                                 <th scope="col" class="px-6 py-4">Jenis Beasiswa</th>
@@ -166,20 +166,66 @@ $id++;
                             <tr class="border-b dark:border-neutral-500">
                                 <td class="whitespace-nowrap px-6 py-4 font-medium ">2</td>
                                 <td class="whitespace-nowrap px-6 py-4">BBP - Kopertis</td>
-                                <td class="whitespace-nowrap px-6 py-4">Cell</td>
-                                <td class="whitespace-nowrap px-6 py-4">Cell</td>
-                                <td class="whitespace-nowrap px-6 py-4">Cell</td>
-                                <td class="whitespace-nowrap px-6 py-4">Cell</td>
-                                <td class="whitespace-nowrap px-6 py-4">Cell</td>
+                                <td class="whitespace-nowrap px-6 py-4">Minimal Semester 2</td>
+                                <td class="whitespace-nowrap px-6 py-4">10-15</td>
+                                <td class="whitespace-nowrap px-6 py-4">2,75</td>
+                                <td class="whitespace-nowrap px-6 py-4">Uang saku: 2,4 juta</td>
+                                <td class="whitespace-nowrap px-6 py-4">4</td>
                             </tr>
                             <tr class="border-b ">
                                 <td class="whitespace-nowrap px-6 py-4 font-medium ">3</td>
-                                <td class="whitespace-nowrap px-6 py-4">Cell</td>
-                                <td class="whitespace-nowrap px-6 py-4">Cell</td>
-                                <td class="whitespace-nowrap px-6 py-4">Cell</td>
-                                <td class="whitespace-nowrap px-6 py-4">Cell</td>
-                                <td class="whitespace-nowrap px-6 py-4">Cell</td>
-                                <td class="whitespace-nowrap px-6 py-4">Cell</td>
+                                <td class="whitespace-nowrap px-6 py-4">Tanoto Foundation</td>
+                                <td class="whitespace-nowrap px-6 py-4">Mahasiswa Baru</td>
+                                <td class="whitespace-nowrap px-6 py-4">5 - 6</td>
+                                <td class="whitespace-nowrap px-6 py-4">2,75</td>
+                                <td class="whitespace-nowrap px-6 py-4">SPP: Full
+                                    Uang saku: 3,6 juta</td>
+                                <td class="whitespace-nowrap px-6 py-4">2</td>
+                            </tr>
+                            <tr class="border-b ">
+                                <td class="whitespace-nowrap px-6 py-4 font-medium ">4</td>
+                                <td class="whitespace-nowrap px-6 py-4">Rajawali Foundation</td>
+                                <td class="whitespace-nowrap px-6 py-4">Mahasiswa Baru</td>
+                                <td class="whitespace-nowrap px-6 py-4">5</td>
+                                <td class="whitespace-nowrap px-6 py-4">2,75</td>
+                                <td class="whitespace-nowrap px-6 py-4">SPP: Full</td>
+                                <td class="whitespace-nowrap px-6 py-4">3</td>
+                            </tr>
+                            <tr class="border-b ">
+                                <td class="whitespace-nowrap px-6 py-4 font-medium ">5</td>
+                                <td class="whitespace-nowrap px-6 py-4">Inalum</td>
+                                <td class="whitespace-nowrap px-6 py-4">Minimal Semester Baru</td>
+                                <td class="whitespace-nowrap px-6 py-4">7</td>
+                                <td class="whitespace-nowrap px-6 py-4">3</td>
+                                <td class="whitespace-nowrap px-6 py-4">Uang makan, uang kuliah. uang asrama: Full</td>
+                                <td class="whitespace-nowrap px-6 py-4">1</td>
+                            </tr>
+                            <tr class="border-b ">
+                                <td class="whitespace-nowrap px-6 py-4 font-medium ">6</td>
+                                <td class="whitespace-nowrap px-6 py-4">BNI</td>
+                                <td class="whitespace-nowrap px-6 py-4">Minimal Semester Baru</td>
+                                <td class="whitespace-nowrap px-6 py-4">10</td>
+                                <td class="whitespace-nowrap px-6 py-4">2,5</td>
+                                <td class="whitespace-nowrap px-6 py-4">Uang makan, uang kuliah. uang asrama: Full</td>
+                                <td class="whitespace-nowrap px-6 py-4">1</td>
+                            </tr>
+                            <tr class="border-b ">
+                                <td class="whitespace-nowrap px-6 py-4 font-medium ">7</td>
+                                <td class="whitespace-nowrap px-6 py-4">Internal (Alumni)</td>
+                                <td class="whitespace-nowrap px-6 py-4">Minimal Semester Baru</td>
+                                <td class="whitespace-nowrap px-6 py-4">ALL</td>
+                                <td class="whitespace-nowrap px-6 py-4"></td>
+                                <td class="whitespace-nowrap px-6 py-4"></td>
+                                <td class="whitespace-nowrap px-6 py-4">Joker</td>
+                            </tr>
+                            <tr class="border-b ">
+                                <td class="whitespace-nowrap px-6 py-4 font-medium ">8</td>
+                                <td class="whitespace-nowrap px-6 py-4">Pelido</td>
+                                <td class="whitespace-nowrap px-6 py-4">Minimal Semester Baru</td>
+                                <td class="whitespace-nowrap px-6 py-4">ALL</td>
+                                <td class="whitespace-nowrap px-6 py-4"></td>
+                                <td class="whitespace-nowrap px-6 py-4"></td>
+                                <td class="whitespace-nowrap px-6 py-4">Joker</td>
                             </tr>
                         </tbody>
                     </table>
