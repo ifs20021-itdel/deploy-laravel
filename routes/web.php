@@ -101,9 +101,3 @@ Route::post('logout', LogoutController::class)->name('logout');
 Route::get('/home',function(){
     return view('admin.home');
 });
-
-
-
-// Route::view('/about', 'about');
-// Route::view('/developer', 'developer');
-// Route::view('/hero', 'hero');

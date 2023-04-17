@@ -57,7 +57,9 @@ $id++;
 
 <div class="w-4/4 m-auto px-10 pb-20">
     @if($eksternalBeasiswa->isEmpty())
+
     <div class="">
+    <div class="container">
         <img src="{{url(asset('assets/kosong.png'))}}" alt="Logo perusahaan" style="margin: 20px auto;">
         <h1 class="text-center font-bold text-1xl text-gray-400" style="margin: 20px auto;">
             Tidak ada pendaftaran beasiswa yang tersedia untuk saat ini!
