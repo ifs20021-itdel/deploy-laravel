@@ -108,3 +108,7 @@ Route::get('/home',function(){
 // Route::view('/about', 'about');
 // Route::view('/developer', 'developer');
 // Route::view('/hero', 'hero');
+
+
+
+Route::delete('/beasiswa/hapus-semua', 'BeasiswaController@deleteAll');

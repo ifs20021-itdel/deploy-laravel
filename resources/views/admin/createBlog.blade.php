@@ -14,7 +14,7 @@
 <body>
   
   <div class="w-3/4 mx-auto font-serif">
-    <h1 class="pt-10 text-4xl font-bold "> Detail Dokumen </h1>
+    <h1 class="pt-10 text-4xl font-bold "> Tambah Rencana Kerja </h1>
     <form class="my-10" action="{{route('store-blog')}}" method="POST" enctype="multipart/form-data">
       @csrf
       <div class="mb-10">
@@ -25,7 +25,7 @@
         @enderror
       </div>
       <div>
-        <label class="text-xl p-1 tracking-wide" for="tags">Tags</label>
+        <label class="text-xl p-1 tracking-wide" for="tags">Jenis Kegiatan</label>
         @if($type == "Beasiswa")
         <input type="text" class="w-full px-4 py-2 mt-2 mb-10 text-sm border border-gray-300 rounded leading-tight focus:outline-none hover:shadow-md " id="tags" name="tags" value="Beasiswa" autofocus />
         @error('tags')
@@ -52,19 +52,17 @@
   <div class="mb-10">
     <label for="caption" class="text-xl p-1 tracking-wide">Deskripsi Singkat</label>
     <input class="block w-full px-4 py-3 text-gray-700 border border-gray-300 rounded leading-tight focus:outline-none hover:shadow-md" id="caption" name="caption" type="text" value="-">
-    <p class=" text-sm "> <span style="color: red">* Optional</span> (n di laman beranda. <span style="color: red"> Skip jika kosong </span>)</p>
   </div>
 
   <div class="mb-10">
-    <label for="thumbnail" class="text-xl p-1 tracking-wide">Thumbnail (Pratinjau)</label>
+    <label for="thumbnail" class="text-xl p-1 tracking-wide">Photo</label>
     <input class="block w-full px-4 py-3 text-gray-700 border border-gray-300 rounded leading-tight focus:outline-none hover:shadow-md" type="file" id="thumbnail" name="thumbnail">
-    <p class=" text-sm "> <span style="color: red">* Optional</span> (Tidak wajib untuk tag Pengumuman, merupakan gambar yang ditampilkan di beranda.)</p>
     @error('caption')
     <div class="text-red-600  pl-2">{{ $message }}</div>
     @enderror
   </div>
 
-  
+
   @if($type=="Beasiswa")
   <div class="mb-10">
     <label class="text-xl p-1 tracking-wide" for="title">Link Pendaftaran</label>
@@ -72,13 +70,16 @@
   </div>
   @endif
   <div>
-    <label class="text-xl p-1 tracking-wide" for="konten">Konten</label>
+    <label class="text-xl p-1 tracking-wide" for="konten">Keterangan</label>
     <textarea id="description" name="description">
           Input text here . . .
         </textarea>
   </div>
-  <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white px-5 py-2 my-4 rounded-md">Submit</button>
-  <a href="/" class="bg-red-500 hover:bg-red-700 text-white px-5 py-3 mx-4 my-4 rounded-md">Cancel</a>
+  <div class="flex flex-row-reverse">
+    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white px-5 py-2 my-4 rounded-md">Submit</button>
+    <a href="/" class="bg-red-500 hover:bg-red-700 text-white px-5 py-3 mx-4 my-4 rounded-md">Cancel</a>
+  </div>
+
   </form>
   </div>
   {{-- Script for input tags --}}
