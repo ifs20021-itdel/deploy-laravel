@@ -15,24 +15,22 @@ use Alert;
 
 class DaftarBeasiswaController extends Controller
 {
-
     public function getIP($nim, $token)
     {
         //$token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImp0aSI6IlVOSVFVRS1KV1QtSURFTlRJRklFUiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLmV4YW1wbGUuY29tIiwiYXVkIjoiaHR0cHM6XC9cL2Zyb250ZW5kLmV4YW1wbGUuY29tIiwianRpIjoiVU5JUVVFLUpXVC1JREVOVElGSUVSIiwiaWF0IjoxNjc5OTc2NjQ4LCJleHAiOjE2Nzk5Nzk2NDgsInVpZCI6NDkwM30.YyTqf6i8x3qCVa_9C-NFtb1Sic6nOJ8OswPeJ_Ff9eU";
         //$token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImp0aSI6IlVOSVFVRS1KV1QtSURFTlRJRklFUiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLmV4YW1wbGUuY29tIiwiYXVkIjoiaHR0cHM6XC9cL2Zyb250ZW5kLmV4YW1wbGUuY29tIiwianRpIjoiVU5JUVVFLUpXVC1JREVOVElGSUVSIiwiaWF0IjoxNjc5OTgwNDU1LCJleHAiOjE2Nzk5ODM0NTUsInVpZCI6NDkwMX0.LTh-Qtbewrhl3wwa6GVKztfOwemZQ6wM0RH0x703isU";
-        $userIP = Http::withToken($token)->asForm()->post('https://cis.del.ac.id/api/library-api/get-penilaian?nim=' . $nim)->body();
+        $userIP = Http::withToken($token)->asForm()->post('https://cis.del.ac.id/api/library-api/get-penilaian?nim=' .$nim)->body();
         $jsonIP = json_decode($userIP, true);
         $userIP = $jsonIP['IP'];
-        return $userIP;
+        return $jsonIP['IP'];
     }
-
     public function create()
     {
         // Get the user data
         $beasiswa = BeasiswaEksternal::all();
         $user  = User::where('user_id', Auth::user()->user_id)->first();
         $userDetail = UserDetail::where('id_user', Auth::user()->user_id)->first();
-        $userIP = $this->getIP($userDetail->nim);
+        $userIP = $this->getIP($userDetail->nim, $user->remember_token);
 
         return view(
             'daftarBeasiswa.formDaftar',

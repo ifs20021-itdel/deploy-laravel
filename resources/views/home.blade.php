@@ -7,7 +7,7 @@
 @csrf
 <div id="hero" class="lg:flex items-center">
   <div class="px-5 sm:px-10 md:px-10 md:flex lg:block lg:w-1/2 lg:max-w-3xl lg:mr-8 lg:px-20">
-    <div class="md:w-1/2 md:mr-10 lg:w-full lg:mr-0">            
+    <div class="md:w-1/2 md:mr-10 lg:w-full lg:mr-0">
       <h1 class="text-5xl font-extrabold tracking-tight text-black sm:text-5xl md:text-5xl lg:text-6xl xl:text-8xl">
         <span class="block xl:inline">Create The</span><br>
         <span class="block text-indigo-600 xl:inline">Best Future</span>
@@ -21,86 +21,75 @@
   </div>
 </div>
 
+<style>
+  .test {
+    background: hsla(0, 0%, 100%, 1);
+    background: linear-gradient(90deg, hsla(0, 0%, 100%, 1) 45%, hsla(0, 0%, 90%, 1) 45%);
+    background: -moz-linear-gradient(90deg, hsla(0, 0%, 100%, 1) 45%, hsla(0, 0%, 90%, 1) 45%);
+    background: -webkit-linear-gradient(90deg, hsla(0, 0%, 100%, 1) 45%, hsla(0, 0%, 90%, 1) 45%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#FFFFFF", endColorstr="#E6E6E6", GradientType=1);
+  }
+</style>
+
 <div class="absolute top-[522px] left-[373px] rounded-xxs bg-white shadow-[0px_10px_2px_rgba(0,_0,_0,_0.03),_0px_12px_16px_rgba(0,_0,_0,_0.1)] flex flex-row py-px pr-[1.015625px] pl-px items-center justify-center text-darkslategray-100 border-[1px] border-solid border-darkgray rounded-md">
-          <div class="relative w-[379.33px] h-[410.89px] shrink-0">
-            <img
-              class="absolute top-[50px] left-[149px] rounded-base w-[82px] h-[82px] object-cover"
-              alt=""
-              src="{{url(asset('assets/icon-internal.png'))}}"
-            />
-            <div
-              class="absolute top-[161.75px] left-[25px] flex flex-col pt-0 pb-[0.09375px] pr-[4.50311279296875px] pl-[4.6875px] items-center justify-start gap-[15.8px]"
-            >
-              <b class="relative text-2xl text-[#31506E]">Beasiswa Internal</b>
-              <div
-                class="relative text-base text-darkslategray-200 flex items-center justify-center w-[320.14px] text-[#31506E] text-center"
-              >
-                Beasiswa yang diberikan oleh Institut Teknologi Del dengan
-                sasaran dan ketentuan yang ...
-              </div>
-            </div>
-            <div
-              class="absolute top-[calc(50%_+_109.95px)] left-[calc(50%_-_57.29px)] rounded flex flex-row pt-[8.5px] pb-[9px] pr-[21.181251525878906px] pl-[21.381248474121094px] items-start justify-start text-[17px] border-[1px] border-solid border-whitesmoke-200"
-            >
-              <a href="/beasiswaInternal"><b class="text-base text-[#31506E]">Read me</a>
-            </div>
-          </div>
-          
-          <div class="relative w-[379.33px] h-[410.89px] shrink-0 text-orange">
-            <img
-              class="absolute top-[51px] left-[148.67px] rounded-base w-[82px] h-[82px] object-cover"
-              alt=""
-              src="{{url(asset('assets/icon-eksternal.png'))}}"
-            />
-            <div class="absolute top-[161.75px] left-[25px] flex flex-col pt-0 pb-[0.09375px] pr-[6.51873779296875px] pl-[6.71875px] items-center justify-start gap-[15.8px]">
-              <b class="text-2xl text-[#F49D1A]">Beasiswa Eksternal</b>
-              <div
-                class="relative text-base text-darkslategray-200 flex items-center justify-center w-[316.09px] text-center text-[#31506E]"
-              >
-                Beasiswa yang diperoleh dari luar kampus, namun dikelola oleh
-                Institut Teknologi Del sesuai ketentuan yang ...
-              </div>
-            </div>
-            <div
-              class="absolute top-[calc(50%_+_109.95px)] left-[calc(50%_-_55.95px)] rounded flex flex-row pt-[8.5px] pb-[9px] pr-[17.845314025878906px] pl-[18.045310974121094px] items-start justify-start text-xl border-[1px] border-solid border-whitesmoke-200"
-            >
-            <a href="/beasiswaEksternal"><b class="text-base text-[#F49D1A]">Read me</b></a>
-            </div>
-          </div>
-        </div>
+  <div class="relative w-[379.33px] h-[410.89px] shrink-0">
+    <img class="absolute top-[50px] left-[149px] rounded-base w-[82px] h-[82px] object-cover" alt="" src="{{url(asset('assets/icon-internal.png'))}}" />
+    <div class="absolute top-[161.75px] left-[25px] flex flex-col pt-0 pb-[0.09375px] pr-[4.50311279296875px] pl-[4.6875px] items-center justify-start gap-[15.8px]">
+      <b class="relative text-2xl text-[#31506E]">Beasiswa Internal</b>
+      <div class="relative text-base text-darkslategray-200 flex items-center justify-center w-[320.14px] text-[#31506E] text-center">
+        Beasiswa yang diberikan oleh Institut Teknologi Del dengan
+        sasaran dan ketentuan yang ...
+      </div>
+    </div>
+    <div class="absolute top-[calc(50%_+_109.95px)] left-[calc(50%_-_57.29px)] rounded flex flex-row pt-[8.5px] pb-[9px] pr-[21.181251525878906px] pl-[21.381248474121094px] items-start justify-start text-[17px] border-[1px] border-solid border-whitesmoke-200">
+      <a href="/beasiswaInternal"><b class="text-base text-[#31506E]">Read me</a>
+    </div>
+  </div>
 
-  <!-- Container -->
-  <div class="container my-24 px-12 mx-auto">
+  <div class="relative w-[379.33px] h-[410.89px] shrink-0 text-orange">
+    <img class="absolute top-[51px] left-[148.67px] rounded-base w-[82px] h-[82px] object-cover" alt="" src="{{url(asset('assets/icon-eksternal.png'))}}" />
+    <div class="absolute top-[161.75px] left-[25px] flex flex-col pt-0 pb-[0.09375px] pr-[6.51873779296875px] pl-[6.71875px] items-center justify-start gap-[15.8px]">
+      <b class="text-2xl text-[#F49D1A]">Beasiswa Eksternal</b>
+      <div class="relative text-base text-darkslategray-200 flex items-center justify-center w-[320.14px] text-[#31506E] text-center">
+        Beasiswa yang diperoleh dari luar kampus, namun dikelola oleh
+        Institut Teknologi Del sesuai ketentuan yang ...
+      </div>
+    </div>
+    <div class="absolute top-[calc(50%_+_109.95px)] left-[calc(50%_-_55.95px)] rounded flex flex-row pt-[8.5px] pb-[9px] pr-[17.845314025878906px] pl-[18.045310974121094px] items-start justify-start text-xl border-[1px] border-solid border-whitesmoke-200">
+      <a href="/beasiswaEksternal"><b class="text-base text-[#F49D1A]">Read me</b></a>
+    </div>
+  </div>
+</div>
 
-    <!-- Section: Design Block -->
-    <section class="mb-32 text-[#0D285F]">
-      <div class="px-6 py-12 md:mx-24 text-center lg:text-left">
-        <div class="container mx-auto mt-40">
-          <div class="grid lg:grid-cols-2 gap-12 flex items-center">
-            <div class="mt-12 lg:mt-0">
-              <h1 class="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight mb-12">
-                Tentang <br /><span>Kami</span>
-              </h1>
-              <p class="text-lg">
+<!-- Container -->
+<div class="container my-24 px-12 mx-auto">
+
+  <!-- Section: Design Block -->
+  <section class="mb-32 text-[#0D285F]">
+    <div class="px-6 py-12 md:mx-24 text-center lg:text-left">
+      <div class="container mx-auto mt-40">
+        <div class="grid lg:grid-cols-2 gap-12 flex items-center">
+          <div class="mt-12 lg:mt-0">
+            <h1 class="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight mb-12">
+              Tentang <br /><span>Kami</span>
+            </h1>
+            <p class="text-lg">
               Insititut Teknonogi Del adalah sebuah perguruan tinggi swasta yang berkedudukan di desa Sitoluama, kecamatan Laguboti, Kabupaten Toba, Sumatra Utara, Indonesia yang didirikan oleh Luhut Binsar Panjaitan.
-              </p>
-            </div>
-            <div class="mb-12 lg:mb-0">
-              <div class="embed-responsive embed-responsive-16by9 relative w-full overflow-hidden rounded-lg shadow-lg"
-                style="padding-top: 56.25%">
-                <iframe class="embed-responsive-item absolute top-0 right-0 bottom-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/iRuvHVWDpGk"
-                  allowfullscreen="" data-gtm-yt-inspected-2340190_699="true" id="240632615"></iframe>
-              </div>
+            </p>
+          </div>
+          <div class="mb-12 lg:mb-0">
+            <div class="embed-responsive embed-responsive-16by9 relative w-full overflow-hidden rounded-lg shadow-lg" style="padding-top: 56.25%">
+              <iframe class="embed-responsive-item absolute top-0 right-0 bottom-0 left-0 w-full h-full" src="https://www.youtube.com/embed/iRuvHVWDpGk" allowfullscreen="" data-gtm-yt-inspected-2340190_699="true" id="240632615"></iframe>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Section: Design Block -->
-    
-  </div>
-  <!-- Container for demo purpose -->
+    </div>
+  </section>
+  <!-- Section: Design Block -->
+
+</div>
+<!-- Container for demo purpose -->
 
 <!-- Section 2 -->
 <!-- <section class="bg-white md:px-0">
@@ -230,6 +219,7 @@ Credit: Componentity.com -->
   </div>
 </div> -->
 
+<div style="border: 8px solid #F49D1A; width: 350px;" class="mb-5 shadow md:shadow-lg"></div>
 <h1 class="text-5xl md:text-6xl md:ml-20 xl:text-7xl text-[#0D285F] font-bold tracking-tight">BERITA</span></h1>
 
 <!-- TAMPIL BERITA -->
@@ -240,52 +230,49 @@ Credit: Componentity.com -->
 </div>
 
 <div class="flex items-center justify-center my-10">
-  <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadowm m-2">
+  <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadowm m-2 shadow-2xl">
+    <div class="p-5 test rounded-lg">
       <a href="#">
-          <img class="rounded-t-lg" src="{{asset('assets/DashboardBg.jpg')}}" alt="" />
+        <p class="mb-2 mt-5 text-black font-semibold">Peresmian Program Beasiswa Sarjana Sea dan Penandatanganan Perjanjian Kerjasama antara Perguruan Tinggi yang Menjadi Mitra Garena</p>
       </a>
-      <div class="p-5">
-          <a href="#">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-black">Lorem Ipsum Beasiswa</h5>
-          </a>
-          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-          <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-[#F49D1A] dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-              Read more
-              <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-          </a>
-      </div>
+      <a href="#">
+        <img class="rounded-t-lg" src="{{asset('assets/Berita.png')}}" alt="" style="margin: 20px auto;" width="350px" />
+      </a>
+      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Pada Hari Senin, 14 Februari 2022 telah diadakan acara Peresmian Program Beasiswa Sarjana Sea 2022 oleh PT Garena Indonesia secara daring. Institut...</p>
+      <a href="#" class="items-center px-3 py-2 text-sm font-medium text-center text-white rounded-full focus:ring-4 focus:outline-none" style="background-color: #F49D1A; margin-left:240px;">
+        <i>read more..</i>
+      </a>
+    </div>
   </div>
 
-  <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow m-2">
+  <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow m-2 shadow-2xl">
+    <div class="p-5 test rounded-lg">
       <a href="#">
-          <img class="rounded-t-lg" src="{{asset('assets/DashboardBg.jpg')}}" alt="" />
+        <p class="mb-2 mt-5 text-black font-semibold">Peresmian Program Beasiswa Sarjana Sea dan Penandatanganan Perjanjian Kerjasama antara Perguruan Tinggi yang Menjadi Mitra Garena</p>
       </a>
-      <div class="p-5">
-          <a href="#">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-black">Lorem Ipsum Beasiswa</h5>
-          </a>
-          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-          <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[blue-700] rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-[#F49D1A] dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-              Read more
-              <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-          </a>
-      </div>
+      <a href="#">
+        <img class="rounded-t-lg" src="{{asset('assets/Berita.png')}}" alt="" style="margin: 20px auto;" width="350px" />
+      </a>
+      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Pada Hari Senin, 14 Februari 2022 telah diadakan acara Peresmian Program Beasiswa Sarjana Sea 2022 oleh PT Garena Indonesia secara daring. Institut...</p>
+      <a href="#" class="items-center px-3 py-2 text-sm font-medium text-center text-white rounded-full focus:ring-4 focus:outline-none" style="background-color: #F49D1A; margin-left:240px;">
+        <i>read more..</i>
+      </a>
+    </div>
   </div>
 
-  <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow m-2">
+  <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow m-2 shadow-2xl">
+    <div class="p-5 test rounded-lg">
       <a href="#">
-          <img class="rounded-t-lg" src="{{asset('assets/DashboardBg.jpg')}}" alt="" />
+        <p class="mb-2 mt-5 text-black font-semibold">Peresmian Program Beasiswa Sarjana Sea dan Penandatanganan Perjanjian Kerjasama antara Perguruan Tinggi yang Menjadi Mitra Garena</p>
       </a>
-      <div class="p-5">
-          <a href="#">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-black">Lorem Ipsum Beasiswa</h5>
-          </a>
-          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-          <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-[#F49D1A] dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-              Read more
-              <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-          </a>
-      </div>
+      <a href="#">
+        <img class="rounded-t-lg" src="{{asset('assets/Berita.png')}}" alt="" style="margin: 20px auto;" width="350px" />
+      </a>
+      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Pada Hari Senin, 14 Februari 2022 telah diadakan acara Peresmian Program Beasiswa Sarjana Sea 2022 oleh PT Garena Indonesia secara daring. Institut...</p>
+      <a href="#" class="items-center px-3 py-2 text-sm font-medium text-center text-white rounded-full focus:ring-4 focus:outline-none" style="background-color: #F49D1A; margin-left:240px;">
+        <i>read more..</i>
+      </a>
+    </div>
   </div>
 </div>
 @endsection

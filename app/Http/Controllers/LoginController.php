@@ -54,18 +54,18 @@ class LoginController extends Controller
                 $role = $json['user']['role'];
                 $remember_token = $json['token'];
 
-                $userDetail = Http::withToken($token)->asForm()->post('https://cis-dev.del.ac.id/api/library-api/mahasiswa?username=' . $username)->body();
+                $userDetail = Http::withToken($token)->asForm()->post('https://cis.del.ac.id/api/library-api/mahasiswa?username=' . $username)->body();
                 $jsonDetail = json_decode($userDetail, true);
 
                 // Cek apakah data user terdapat di database
                 $exist = User::where('user_id', $id_user)->exists();
+
                 $users = new User;
                 $users->user_id = $id_user;
                 $users->username = $username;
                 $users->email = $email;
                 $users->role = $role;
                 $users->remember_token = $remember_token;
-
 
 
                 if (!$exist) {
@@ -83,6 +83,10 @@ class LoginController extends Controller
                     $userDetail->angkatan = $jsonDetail['data']['mahasiswa'][0]['angkatan'];
                     $userDetail->status = $jsonDetail['data']['mahasiswa'][0]['status'];
                     $userDetail->save();
+                }
+
+                if($exist){
+                    $users->where('user_id', $id_user)->update(['remember_token'=>$remember_token]);
                 }
 
                 $dt = User::where('user_id', $id_user)->first();
