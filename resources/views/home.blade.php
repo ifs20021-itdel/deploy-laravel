@@ -1,8 +1,23 @@
 @extends('layouts.app')
-@section('title','Home')
+@section('title','berita')
 @section('background', 'bg-white')
 @section('background-opc')
 @section('content')
+
+
+<script src="{{ asset('js/tabs.js') }}">
+  // Initialization for ES Users
+  import {
+    Tab,
+    initTE,
+  } from "tw-elements";
+
+  initTE({
+    Tab
+  });
+</script>
+
+
 
 @csrf
 <div id="hero" class="lg:flex items-center">
@@ -219,60 +234,64 @@ Credit: Componentity.com -->
   </div>
 </div> -->
 
-<div style="border: 8px solid #F49D1A; width: 350px;" class="mb-5 shadow md:shadow-lg"></div>
-<h1 class="text-5xl md:text-6xl md:ml-20 xl:text-7xl text-[#0D285F] font-bold tracking-tight">BERITA</span></h1>
+<!-- MULTI TAB -->
 
-<!-- TAMPIL BERITA -->
-<div class="flex items-center justify-center my-10">
-  <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadowm m-2">
-    @include('blog.postArtikel')
+<!--Tabs navigation-->
+<div class="container mx-auto px-4">
+  <ul class="mb-5 flex list-none flex-row flex-wrap border-b-0 pl-0 rounded-lg" role="tablist" data-te-nav-ref style="background-color: #0D285F;">
+    <li role="presentation" class="flex-grow basis-0 text-center">
+      <a href="#tabs-berita02" class="border-x-4 border-white-500 my-2 block px-7 pb-3.5 pt-4 text-xm font-bold uppercase leading-tight text-neutral-500  focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-white dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-white-400" data-te-toggle="pill" data-te-target="#tabs-berita02" data-te-nav-active role="tab" aria-controls="tabs-berita02" aria-selected="true">BERITA</a>
+    </li>
+    <li role="presentation" class="flex-grow basis-0 text-center">
+      <a href="#tabs-seleksi02" class="border-x-4 border-white-500 focus:border-transparen my-2 block px-7 pb-3.5 pt-4 text-xm font-bold uppercase leading-tight text-neutral-500  focus:isolate data-[te-nav-active]:border-primary data-[te-nav-active]:text-white dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-white-400" data-te-toggle="pill" data-te-target="#tabs-seleksi02" role="tab" aria-controls="tabs-seleksi02" aria-selected="false">SELEKSI</a>
+    </li>
+    <li role="presentation" class="flex-grow basis-0 text-center">
+      <a href="#tabs-pengumuman02" class="border-x-4 border-white-500 my-2 block px-7 pb-3.5 pt-4 text-xm font-bold uppercase leading-tight text-neutral-500  focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-white dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-white-400" data-te-toggle="pill" data-te-target="#tabs-pengumuman02" role="tab" aria-controls="tabs-pengumuman02" aria-selected="false">PENGUMUMAN</a>
+    </li>
+    <li role="presentation" class="flex-grow basis-0 text-center">
+      <a href="#tabs-testimoni02" class="border-x-4 border-white-500 my-2 block px-7 pb-3.5 pt-4 text-xm font-bold uppercase leading-tight text-neutral-500  focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-white dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-white-400" data-te-toggle="pill" data-te-target="#tabs-testimoni02" role="tab" aria-controls="tabs-testimoni02" aria-selected="false">TESTIMONI</a>
+    </li>
+  </ul>
+</div>
+
+<!--Tabs content-->
+<div>
+  <div class="">
+    <div class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block" id="tabs-berita02" role="tabpanel" aria-labelledby="tabs-berita-tab02" data-te-tab-active>
+      <div style="border: 8px solid #F49D1A; width: 350px;" class="mb-5 shadow md:shadow-lg"></div>
+      <h1 class="text-5xl md:text-6xl md:ml-20 xl:text-6xl text-[#0D285F] font-bold tracking-tight">BERITA</span></h1>
+
+      <!-- TAMPIL BERITA -->
+      <div class="flex items-center justify-center my-10">
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadowm m-2">
+          @include('blog.postArtikel')
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- TAMPIL SELEKSI -->
+    <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block" id="tabs-seleksi02" role="tabpanel" aria-labelledby="tabs-seleksi-tab02">
+      <div style="border: 8px solid #F49D1A; width: 350px;" class="mb-5 shadow md:shadow-lg"></div>
+      <h1 class="text-5xl md:text-6xl md:ml-20 xl:text-6xl text-[#0D285F] font-bold tracking-tight">SELEKSI</span></h1>
+    </div>
+
+    <!-- TAMPIL PENGUMUMAN -->
+    <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block" id="tabs-pengumuman02" role="tabpanel" aria-labelledby="tabs-pengumuman-tab02">
+    <div style="border: 8px solid #F49D1A; width: 450px;" class="mb-5 shadow md:shadow-lg"></div>
+      <h1 class="text-5xl md:text-6xl md:ml-20 xl:text-5xl text-[#0D285F] font-bold tracking-tight">PENGUMUMAN</span></h1>
+    </div>
+
+    <!-- TAMPIL TESTIMONI -->
+    <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block" id="tabs-testimoni02" role="tabpanel" aria-labelledby="tabs-testimoni-tab02">
+    <div style="border: 8px solid #F49D1A; width: 350px;" class="mb-5 shadow md:shadow-lg"></div>
+      <h1 class="text-5xl md:text-6xl md:ml-20 xl:text-5xl text-[#0D285F] font-bold tracking-tight">TESTIMONI</span></h1>
+    </div>
   </div>
 </div>
 
-<div class="flex items-center justify-center my-10">
-  <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadowm m-2 shadow-2xl">
-    <div class="p-5 test rounded-lg">
-      <a href="#">
-        <p class="mb-2 mt-5 text-black font-semibold">Peresmian Program Beasiswa Sarjana Sea dan Penandatanganan Perjanjian Kerjasama antara Perguruan Tinggi yang Menjadi Mitra Garena</p>
-      </a>
-      <a href="#">
-        <img class="rounded-t-lg" src="{{asset('assets/Berita.png')}}" alt="" style="margin: 20px auto;" width="350px" />
-      </a>
-      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Pada Hari Senin, 14 Februari 2022 telah diadakan acara Peresmian Program Beasiswa Sarjana Sea 2022 oleh PT Garena Indonesia secara daring. Institut...</p>
-      <a href="#" class="items-center px-3 py-2 text-sm font-medium text-center text-white rounded-full focus:ring-4 focus:outline-none" style="background-color: #F49D1A; margin-left:240px;">
-        <i>read more..</i>
-      </a>
-    </div>
-  </div>
+<!-- END MULTI TAB -->
 
-  <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow m-2 shadow-2xl">
-    <div class="p-5 test rounded-lg">
-      <a href="#">
-        <p class="mb-2 mt-5 text-black font-semibold">Peresmian Program Beasiswa Sarjana Sea dan Penandatanganan Perjanjian Kerjasama antara Perguruan Tinggi yang Menjadi Mitra Garena</p>
-      </a>
-      <a href="#">
-        <img class="rounded-t-lg" src="{{asset('assets/Berita.png')}}" alt="" style="margin: 20px auto;" width="350px" />
-      </a>
-      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Pada Hari Senin, 14 Februari 2022 telah diadakan acara Peresmian Program Beasiswa Sarjana Sea 2022 oleh PT Garena Indonesia secara daring. Institut...</p>
-      <a href="#" class="items-center px-3 py-2 text-sm font-medium text-center text-white rounded-full focus:ring-4 focus:outline-none" style="background-color: #F49D1A; margin-left:240px;">
-        <i>read more..</i>
-      </a>
-    </div>
-  </div>
 
-  <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow m-2 shadow-2xl">
-    <div class="p-5 test rounded-lg">
-      <a href="#">
-        <p class="mb-2 mt-5 text-black font-semibold">Peresmian Program Beasiswa Sarjana Sea dan Penandatanganan Perjanjian Kerjasama antara Perguruan Tinggi yang Menjadi Mitra Garena</p>
-      </a>
-      <a href="#">
-        <img class="rounded-t-lg" src="{{asset('assets/Berita.png')}}" alt="" style="margin: 20px auto;" width="350px" />
-      </a>
-      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Pada Hari Senin, 14 Februari 2022 telah diadakan acara Peresmian Program Beasiswa Sarjana Sea 2022 oleh PT Garena Indonesia secara daring. Institut...</p>
-      <a href="#" class="items-center px-3 py-2 text-sm font-medium text-center text-white rounded-full focus:ring-4 focus:outline-none" style="background-color: #F49D1A; margin-left:240px;">
-        <i>read more..</i>
-      </a>
-    </div>
-  </div>
-</div>
 @endsection

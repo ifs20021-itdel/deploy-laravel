@@ -1,5 +1,7 @@
 <div class="flex justify-end hidden md:flex md:w-auto md:order-1" id="mobile-menu-2">
   <ul class="flex flex-col  mt-4 border md:flex-row md:space-x-12 md:mt-0 md:text-sm md:font-medium md:border-0 ">
+
+    @if(Auth::user()->role == 'Mahasiswa')
     <li>
       <a href="/about" class="block py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-400 md:p-0 tracking-wider " aria-current="page">TENTANG KAMI</a>
     </li>
@@ -28,7 +30,7 @@
         </ul>
       </div>
     </li>
-
+    @endif
     @if(Auth::user()->role == 'Admin')
     <li>
       <button id="dropdownJenisBeasiswa" data-dropdown-toggle="dropdownJ" class="z-20 py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-400 md:p-0 inline-flex items-center tracking-wider" type="button">JENIS BEASISWA <svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -64,7 +66,6 @@
       </div>
     </li>
     @endif
-
     <li>
       <div class="flex items-center md:order-2 pr-3">
         <button type="button" class="flex mr-3 text-sm rounded-full md:mr-0 " id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
@@ -92,6 +93,16 @@
         </div>
         <p class="pl-4 text-black tracking-widest">{{Session::get('username')}}</p>
       </div>
+
     </li>
   </ul>
 </div>
+
+
+
+
+
+
+
+
+<!-- Ini yg ada logo -->

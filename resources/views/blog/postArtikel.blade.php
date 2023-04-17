@@ -1,9 +1,9 @@
-<div class="flex justify-center">
+<div class="flex items-center justify-center my-10">
     @foreach($arrayOfArticle as $key => $value)
       @php
         $img = "imgArt";
       @endphp
-  <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadowm m-2">
+  <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadowm m-2 shadow-2xl">
         <div class="grid grid-cols-1">
           <div class="bg-blue-300 px-3 py-2">
             <img src="{{$value->thumbnail}}" alt="{{$img.=$value->id_article}}" height="300">
