@@ -59,13 +59,13 @@ class LoginController extends Controller
 
                 // Cek apakah data user terdapat di database
                 $exist = User::where('user_id', $id_user)->exists();
+
                 $users = new User;
                 $users->user_id = $id_user;
                 $users->username = $username;
                 $users->email = $email;
                 $users->role = $role;
                 $users->remember_token = $remember_token;
-
 
 
                 if (!$exist) {
@@ -83,6 +83,10 @@ class LoginController extends Controller
                     $userDetail->angkatan = $jsonDetail['data']['mahasiswa'][0]['angkatan'];
                     $userDetail->status = $jsonDetail['data']['mahasiswa'][0]['status'];
                     $userDetail->save();
+                }
+
+                if($exist){
+                    $users->where('user_id', $id_user)->update(['remember_token'=>$remember_token]);
                 }
 
                 $dt = User::where('user_id', $id_user)->first();
