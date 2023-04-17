@@ -74,13 +74,13 @@
                                                 <div class="text-red-600  pl-2">{{ $message }}</ @enderror </div>
                                                     <div class="mb-10">
                                                         <label class="text-xl p-1 tracking-wide" for="ipk">IPK<span style="color:red">*</span></label>
-                                                        <input class="block w-full px-4 py-3 text-black border border-gray-300 bg-gray-100 rounded leading-tight focus:outline-none " id="ipk" name="ipk" type="text" value="{{$userIP}}" readonly placeholder="masukkan IPK anda">
+                                                        <input class="block w-full px-4 py-3 text-black border border-gray-300 bg-neutral-400 rounded leading-tight focus:outline-none" id="ipk" name="ipk" type="text" value="{{$userIP}}" readonly>
                                                         {{-- <p class=" px-1 py-1 text-sm">format: 3.04</p> --}}
                                                         @error('ipk')
                                                         <div class="text-red-600  pl-2">{{ $message }}</ @enderror </div>
                                                             <div class="mb-10">
                                                                 <label class="text-xl p-1 tracking-wide" for="nilaiPerilaku">Nilai Perilaku<span style="color:red">*</span></label>
-                                                                <input class="block w-full px-4 py-3 text-black border border-gray-300 bg-gray-100 rounded leading-tight focus:outline-none focus:bg-white hover:shadow-md" id="nilaiPerilaku" name="nilaiPerilaku" type="text" placeholder="masukkan nilai perilaku anda">
+                                                                <input class="block w-full px-4 py-3 text-black border border-gray-300 bg-neutral-400 rounded leading-tight focus:outline-none" value="{{$nilaiPerilaku}}" id="nilaiPerilaku" name="nilaiPerilaku" type="text" readonly>
                                                                 @error('nilaiPerilaku')
                                                                 <div class="text-red-600  pl-2">{{ $message }}</ @enderror </div>
                                                                     <div class="mb-10">

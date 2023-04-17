@@ -24,6 +24,15 @@ class DaftarBeasiswaController extends Controller
         $userIP = $jsonIP['IP'];
         return $jsonIP['IP'];
     }
+    
+    public function getPerilaku($nim, $token){
+        $userIP = Http::withToken($token)->asForm()->post('https://cis.del.ac.id/api/library-api/get-penilaian?nim=' . $nim)->body();
+        $jsonIP = json_decode($userIP, true);
+        $perilaku = $jsonIP['Nilai Perilaku'];
+        $currentPerilaku = $perilaku['2022_2']['nilai_huruf'];
+        return $currentPerilaku;
+    }
+
     public function create()
     {
         // Get the user data
@@ -31,6 +40,8 @@ class DaftarBeasiswaController extends Controller
         $user  = User::where('user_id', Auth::user()->user_id)->first();
         $userDetail = UserDetail::where('id_user', Auth::user()->user_id)->first();
         $userIP = $this->getIP($userDetail->nim, $user->remember_token);
+        $nilaiPerilaku = $this->getPerilaku($userDetail->nim, $user->remember_token);
+
 
         return view(
             'daftarBeasiswa.formDaftar',
@@ -39,8 +50,8 @@ class DaftarBeasiswaController extends Controller
                 'userDetail' => $userDetail,
                 'beasiswa' => $beasiswa,
                 'userIP' => $userIP,
+                'nilaiPerilaku'=> $nilaiPerilaku
             ]
-
         );
     }
 

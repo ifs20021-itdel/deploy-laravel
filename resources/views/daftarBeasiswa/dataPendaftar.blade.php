@@ -23,6 +23,11 @@
                     <th class="px-10 border border-slate-400">@sortablelink('nim',"NIM")</th>
                     <th class="px-12 border border-slate-400">@sortablelink('prodi',"Program Studi")</th>
                     <th class="px-10 border border-slate-400">@sortablelink('tipeBeasiswa',"Beasiswa")</th>
+                    @if(Auth::user())
+                    @if(Auth::user()->role == "Admin")
+                        <th class="px-10 border border-slate-400">@sortablelink("Status")</th>
+                    @endif
+                @endif
                 </tr>
                 @php
                     $id = 1;
@@ -34,6 +39,11 @@
                         <td class="border border-slate-400">{{$item->nim}}</td>
                         <td class="border border-slate-400">{{$item->prodi}}</td>
                         <td class="border border-slate-400">{{$item->tipeBeasiswa}}</td>
+                        @if(Auth::user())
+                            @if(Auth::user()->role == "Admin")
+                                <td class="px-10 border border-slate-400">Aksi</td>
+                            @endif
+                        @endif
                     </tr>
                     @php
                         $id++;
