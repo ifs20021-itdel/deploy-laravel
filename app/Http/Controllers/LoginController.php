@@ -54,7 +54,7 @@ class LoginController extends Controller
                 $role = $json['user']['role'];
                 $remember_token = $json['token'];
 
-                $userDetail = Http::withToken($token)->asForm()->post('https://cis-dev.del.ac.id/api/library-api/mahasiswa?username=' . $username)->body();
+                $userDetail = Http::withToken($token)->asForm()->post('https://cis.del.ac.id/api/library-api/mahasiswa?username=' . $username)->body();
                 $jsonDetail = json_decode($userDetail, true);
 
                 // Cek apakah data user terdapat di database
