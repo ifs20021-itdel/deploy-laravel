@@ -31,6 +31,8 @@ return new class extends Migration
             $table->text('transkrip');
             $table->text('suratPernyataan');
             $table->text('lainnya');
+            $table->string('nilaiPerilaku');
+            $table->string('status_beasiswa');
 
             $table->timestamps();
         });
