@@ -1,10 +1,10 @@
-<div class="flex items-center justify-center my-10">
+<div class="flex items-center justify-center my-10 border">
     @foreach($arrayOfArticle as $key => $value)
       @php
         $img = "imgArt";
       @endphp
-  <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadowm m-2 shadow-2xl">
-        <div class="grid grid-cols-1">
+  <div class="">
+        <div class="">
           <div class="bg-blue-300 px-3 py-2">
             <img src="{{$value->thumbnail}}" alt="{{$img.=$value->id_article}}" height="300">
             <div class="font-bold pt-2">
@@ -28,3 +28,5 @@
 <div class=" m-auto pb-5">
   {!! $arrayOfArticle->appends(Request::except('page'))->render() !!}
 </div>
+
+

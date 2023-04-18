@@ -122,12 +122,3 @@
     </li>
   </ul>
 </div>
-
-
-
-
-
-
-
-
-<!-- Ini yg ada logo -->

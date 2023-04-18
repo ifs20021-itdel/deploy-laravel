@@ -262,8 +262,8 @@ Credit: Componentity.com -->
       <h1 class="text-5xl md:text-6xl md:ml-20 xl:text-6xl text-[#0D285F] font-bold tracking-tight">BERITA</span></h1>
 
       <!-- TAMPIL BERITA -->
-      <div class="flex items-center justify-center my-10 border">
-        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadowm m-2">
+      <div class="flex items-center justify-center my-10 rounded-lg" style="width: 800px; margin:20px auto;">
+        <div class="bg-white m-2" style="width:800px;">
           @include('blog.postArtikel')
         </div>
       </div>
@@ -281,8 +281,8 @@ Credit: Componentity.com -->
     <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block" id="tabs-pengumuman02" role="tabpanel" aria-labelledby="tabs-pengumuman-tab02">
       <div style="border: 8px solid #F49D1A; width: 450px;" class="mb-5 shadow md:shadow-lg"></div>
       <h1 class="text-5xl md:text-6xl md:ml-20 xl:text-5xl text-[#0D285F] font-bold tracking-tight">PENGUMUMAN</span></h1>
-      <div class="flex items-center justify-center my-10">
-        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadowm m-2">
+      <div class="flex items-center justify-center my-10 rounded-lg" style="width: 800px; margin:20px auto;">
+        <div class="bg-white border border-gray-200 rounded-lg shadowm m-2" style="width:800px;">
           @include('blog.postPengumuman')
         </div>
       </div>
