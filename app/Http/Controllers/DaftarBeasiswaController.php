@@ -128,7 +128,48 @@ class DaftarBeasiswaController extends Controller
 
     public function show()
     {
-        $registrars = Registrar::all();
-        return view('seleksibeasiswa.seleksi', compact('registrars'));
+        $query = Registrar::query();
+        
+        if (request()->has('prodi') && request()->query('prodi') != '') {
+            $prodi = request()->query('prodi');
+            $query = $query->where('prodi', $prodi);
+        }
+
+        if (request()->has('jenis') && request()->query('jenis') != '') {
+            $jenis = request()->query('jenis');
+            $query = $query->where('jenis_Beasiswa', $jenis);
+        }
+
+        if (request()->has('status') && request()->query('status') != '') {
+            $status = request()->query('status');
+            $query = $query->where('status_beasiswa', $status);
+        }
+
+        $data = $query->get();
+        return view('seleksibeasiswa.seleksi', compact('data'));
+    }
+
+    public function detail($nim)
+    {
+        // dd($nim);
+        $beasiswa = Registrar::where('nim', $nim)->first();
+        // dd($beasiswa);
+        return view('seleksibeasiswa.detail', compact('beasiswa'));
+    }
+
+    public function update(Request $request)
+    {
+
+        $beasiswa = Registrar::where('nim', $request->nim)->first();
+
+        if ($request->submit == 'diterima') {
+            $beasiswa->status_beasiswa = 'diterima';
+        } elseif ($request->submit == 'ditolak') {
+            $beasiswa->status_beasiswa = 'ditolak';
+        }
+        
+        $beasiswa->save();
+        
+        return redirect()->route('seleksi');
     }
 }

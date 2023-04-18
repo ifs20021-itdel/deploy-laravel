@@ -10,7 +10,7 @@ class Registrar extends Model
     protected $table = 'registrar';
     protected $primarykey = 'id';
     protected $fillable = [
-        'id_daftar','emailMhs','nama', 'nim','prodi','tipeBeasiswa','emailPribadi','noHp','tanggalLahir','ipk', 'tempatTinggal','ktm','ktp','transkrip','suratPernyataan','lainnya','created_at', 'updated_at'
+        'id_daftar','emailMhs','nama', 'nim','prodi','tipeBeasiswa','emailPribadi','noHp','tanggalLahir','ipk', 'tempatTinggal','ktm','ktp','transkrip','suratPernyataan','lainnya','created_at', 'updated_at', 'jenis_beasiswa', 'status_beasiswa' 
     ];
 
     // use HasFactory;
