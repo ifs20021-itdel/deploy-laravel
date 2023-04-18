@@ -257,12 +257,12 @@ Credit: Componentity.com -->
 <!--Tabs content-->
 <div>
   <div class="">
-    <div class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block" id="tabs-berita02" role="tabpanel" aria-labelledby="tabs-berita-tab02" data-te-tab-active>
+    <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block" id="tabs-berita02" role="tabpanel" aria-labelledby="tabs-berita-tab02" data-te-tab-active>
       <div style="border: 8px solid #F49D1A; width: 350px;" class="mb-5 shadow md:shadow-lg"></div>
       <h1 class="text-5xl md:text-6xl md:ml-20 xl:text-6xl text-[#0D285F] font-bold tracking-tight">BERITA</span></h1>
 
       <!-- TAMPIL BERITA -->
-      <div class="flex items-center justify-center my-10">
+      <div class="flex items-center justify-center my-10 border">
         <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadowm m-2">
           @include('blog.postArtikel')
         </div>
@@ -279,13 +279,19 @@ Credit: Componentity.com -->
 
     <!-- TAMPIL PENGUMUMAN -->
     <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block" id="tabs-pengumuman02" role="tabpanel" aria-labelledby="tabs-pengumuman-tab02">
-    <div style="border: 8px solid #F49D1A; width: 450px;" class="mb-5 shadow md:shadow-lg"></div>
+      <div style="border: 8px solid #F49D1A; width: 450px;" class="mb-5 shadow md:shadow-lg"></div>
       <h1 class="text-5xl md:text-6xl md:ml-20 xl:text-5xl text-[#0D285F] font-bold tracking-tight">PENGUMUMAN</span></h1>
+      <div class="flex items-center justify-center my-10">
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadowm m-2">
+          @include('blog.postPengumuman')
+        </div>
+      </div>
     </div>
+
 
     <!-- TAMPIL TESTIMONI -->
     <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block" id="tabs-testimoni02" role="tabpanel" aria-labelledby="tabs-testimoni-tab02">
-    <div style="border: 8px solid #F49D1A; width: 350px;" class="mb-5 shadow md:shadow-lg"></div>
+      <div style="border: 8px solid #F49D1A; width: 350px;" class="mb-5 shadow md:shadow-lg"></div>
       <h1 class="text-5xl md:text-6xl md:ml-20 xl:text-5xl text-[#0D285F] font-bold tracking-tight">TESTIMONI</span></h1>
     </div>
   </div>
