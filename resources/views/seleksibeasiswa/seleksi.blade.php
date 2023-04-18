@@ -64,15 +64,17 @@
                             @if(Auth::user())
                                 @if(Auth::user()->role == "Admin")
                                     <tr onclick="window.location='{{ route('detail', ['nim' => $beasiswa->nim]) }}'">
-                                        <td class="border px-4 py-2">{{ $loop->iteration }}</td>
-                                        <td class="border px-4 py-2">{{ $beasiswa->nama }}</td>
-                                        <td class="border px-4 py-2">{{ $beasiswa->nim }}</td>
-                                        <td class="border px-4 py-2">{{ $beasiswa->prodi }}</td>
-                                        <td class="border px-4 py-2">{{ $beasiswa->year }}</td>
-                                        <td class="border px-4 py-2">{{ $beasiswa->jenis_Beasiswa }}</td>
-                                        <td class="border px-4 py-2">{{ $beasiswa->status_beasiswa }}</td>
-                                    </tr>
+                                @else
+                                    <tr>
                                 @endif
+                                    <td class="border px-4 py-2">{{ $loop->iteration }}</td>
+                                    <td class="border px-4 py-2">{{ $beasiswa->nama }}</td>
+                                    <td class="border px-4 py-2">{{ $beasiswa->nim }}</td>
+                                    <td class="border px-4 py-2">{{ $beasiswa->prodi }}</td>
+                                    <td class="border px-4 py-2">{{ $beasiswa->year }}</td>
+                                    <td class="border px-4 py-2">{{ $beasiswa->jenis_Beasiswa }}</td>
+                                    <td class="border px-4 py-2">{{ $beasiswa->status_beasiswa }}</td>
+                                    </tr>
                             @endif
                         @endforeach
                     </tbody>
