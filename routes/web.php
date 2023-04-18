@@ -87,6 +87,14 @@ Route::get('/seleksi',
     [ DaftarBeasiswaController::class,'show']
 )->name('seleksi');
 
+Route::post('/detail/{nim}', 
+    [ DaftarBeasiswaController::class, 'update' ]
+)->name('adad');
+
+Route::get('/detail/{nim}',
+    [DaftarBeasiswaController::class,'detail']
+)->name('detail');
+
 // Data Beasiswa
 Route::get('dataBeasiswa/{tahun}',[DataBeasiswaController::class,'index'])->name('dataBeasiswa');
 
