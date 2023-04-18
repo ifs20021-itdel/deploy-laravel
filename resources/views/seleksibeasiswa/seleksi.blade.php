@@ -67,7 +67,7 @@
                                 <td class="border px-4 py-2">{{ $beasiswa->nim }}</td>
                                 <td class="border px-4 py-2">{{ $beasiswa->prodi }}</td>
                                 <td class="border px-4 py-2">{{ $beasiswa->year }}</td>
-                                <td class="border px-4 py-2">{{ $beasiswa->program_beasiswa }}</td>
+                                <td class="border px-4 py-2">{{ $beasiswa->jenis_Beasiswa }}</td>
                                 <td class="border px-4 py-2">{{ $beasiswa->status_beasiswa }}</td>
                             </tr>
                         @endforeach
