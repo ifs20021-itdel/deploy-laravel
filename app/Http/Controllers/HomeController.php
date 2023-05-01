@@ -10,10 +10,12 @@ class HomeController extends Controller
 {
     public function index(){
         $arrayOfArticle = Posts::select("posts.*")->where('tags','LIKE','%artikel%')->orWhere('tags','LIKE','%berita%')->paginate(2);
+        $arrayOfTestimoni = Posts::select("posts.*")->where('tags','LIKE','%testimoni%')->paginate(2);
         $announcements = Posts::select("posts.*")->where('tags','LIKE','%pengumuman%')->paginate(10);
         return view('home',
         [
             'arrayOfArticle' => $arrayOfArticle,
+            'arrayOfTestimoni' => $arrayOfTestimoni,
             'announcements' => $announcements
         ]
     );

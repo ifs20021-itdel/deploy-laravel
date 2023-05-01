@@ -105,7 +105,7 @@
           </div>
           <ul class="py-1" aria-labelledby="user-menu-button">
             <li>
-              <a href="/" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 ">Dashboard</a>
+              <a href="/dashboard" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 ">Dashboard</a>
             </li>
             <li>
               <form action="{{route('logout')}}" method="POST">

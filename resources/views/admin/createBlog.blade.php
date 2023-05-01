@@ -31,11 +31,18 @@
         @error('tags')
         <div class="text-red-600  pl-2">{{ $message }}</div>
         @enderror
+            @if($type == Artikel)
+            <input type="text" class="w-full px-4 py-2 mt-2 mb-10 text-sm border border-gray-300 rounded leading-tight focus:outline-none hover:shadow-md " id="tags" name="tags" value="Artikel" autofocus />
+            @error('tags')
+            <div class="text-red-600  pl-2">{{ $message }}</div>
+            @enderror
+            @endif
         @else
-        <input type="text" class="w-full px-4 py-2 mt-2 mb-10 text-sm border border-gray-300 rounded leading-tight focus:outline-none hover:shadow-md " id="tags" name="tags" value="Artikel" autofocus />
+        <input type="text" class="w-full px-4 py-2 mt-2 mb-10 text-sm border border-gray-300 rounded leading-tight focus:outline-none hover:shadow-md " id="tags" name="tags" value="Testimoni" autofocus />
         @error('tags')
         <div class="text-red-600  pl-2">{{ $message }}</div>
         @enderror
+
         @endif
         {{-- <input
           type="text"
@@ -90,7 +97,7 @@
     var input = document.querySelector('input[name=tags]');
     var tagify = new Tagify(input, {
       keepInvalidTags: true,
-      whitelist: ['Artikel', 'Berita', 'Beasiswa', 'Pengumuman'],
+      whitelist: ['Artikel', 'Berita', 'Beasiswa', 'Pengumuman', 'Testimoni'],
       hooks: {
         beforeRemoveTag: (tags) => {
           tags[0].node.classList.add('tagify__tag');

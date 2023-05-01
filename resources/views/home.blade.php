@@ -293,11 +293,14 @@ Credit: Componentity.com -->
     <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block" id="tabs-testimoni02" role="tabpanel" aria-labelledby="tabs-testimoni-tab02">
       <div style="border: 8px solid #F49D1A; width: 350px;" class="mb-5 shadow md:shadow-lg"></div>
       <h1 class="text-5xl md:text-6xl md:ml-20 xl:text-5xl text-[#0D285F] font-bold tracking-tight">TESTIMONI</span></h1>
+      <div class="flex items-center justify-center my-10 rounded-lg" style="width: 800px; margin:20px auto;">
+        <div class="bg-white border border-gray-200 rounded-lg shadowm m-2" style="width:800px;">
+          @include('blog.postTestimoni')
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<!-- END MULTI TAB -->
+    <!-- END MULTI TAB -->
 
 
-@endsection
+    @endsection

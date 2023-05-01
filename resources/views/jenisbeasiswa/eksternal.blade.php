@@ -27,7 +27,7 @@ $list = explode(";", $item->description);
 $item->description = $list;
 }
 @endphp
-@foreach($sponsorship as $item)
+<!-- @foreach($sponsorship as $item)
 <div class="container w-3/4 m-auto px-10">
     <h1 class="text-3xl font-bold pb-5 ">{{$id}}. {{$item->title}}</h1>
     @if(
@@ -46,7 +46,7 @@ $item->description = $list;
 @php
 $id++;
 @endphp
-@endforeach
+@endforeach -->
 
 <div class="w-4/4 m-auto px-10 pb-20">
     @if($eksternalBeasiswa->isEmpty())
