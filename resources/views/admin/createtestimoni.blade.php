@@ -19,6 +19,7 @@
              <div class="mb-6">
                 <label for="nama" class="block pr-24 mb-2 text-md font-medium text-gray-900 dark:text-black">Isi Testimoni<span style="color:red">*</span></label>
                 <textarea autocomplete="off" type="text" id="isi" name="isi" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Silahkan Isi Nama" >
+
                 </textarea>
              </div>
 

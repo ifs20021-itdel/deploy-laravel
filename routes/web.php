@@ -87,6 +87,9 @@ Route::group(
     }
 );
 
+//deletetestimoni
+Route::get('/create-testimoni/{id}', [TestimoniController::class, 'destroy']);
+
 // Dashboard
 Route::get('/dashboard', function () {
     return view('admin.dashboard');

@@ -16,10 +16,8 @@ class TestimoniController extends Controller
     public function index()
     {
         $testimoni = Testimoni::all();
-        return view(
-            'admin.testimoni',
-            compact('testimoni')
-        );
+        return view('admin.testimoni',
+        compact('testimoni'));
     }
 
     /**
@@ -30,7 +28,7 @@ class TestimoniController extends Controller
     public function create()
     {
         return view('admin.createtestimoni');
-    }
+        }
 
     /**
      * Store a newly created resource in storage.
@@ -40,18 +38,19 @@ class TestimoniController extends Controller
      */
     public function store(Request $request)
     {
-        $validatedData = $request->validate([
-            'nama' => 'required',
-            'isi' => 'required',
-            'foto' => 'required',
-            'author' => 'required'
-        ]);
+         $validatedData = $request->validate([
+        'nama' => 'required',
+        'isi' => 'required',
+        'foto' => 'required',
+        'author' => 'required'
+    ]);
 
-        Testimoni::create($validatedData);
-        Alert::success('Sukses', 'Data Telah Disimpan.');
+    Testimoni::create($validatedData);
+    Alert::success('Sukses', 'Data Telah Disimpan.');
 
-        return redirect()->route('testimoni');
-    }
+    return redirect()->route('testimoni');
+
+}
 
     /**
      * Display the specified resource.
@@ -99,8 +98,8 @@ class TestimoniController extends Controller
 
         $testimoni = Testimoni::find($id);
         $testimoni->delete();
-        Alert::success('Sukses', 'Data Telah Dihapus.');
+         Alert::success('Sukses', 'Data Telah Dihapus.');
 
-        return redirect()->route('testimoni');
+         return redirect()->route('testimoni');
     }
 }
